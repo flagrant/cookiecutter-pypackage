@@ -64,7 +64,7 @@ Ready to contribute? Here's how to set up `{{ cookiecutter.repo_name }}` for loc
 
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
 
-    $ mkvirtualenv {{ cookiecutter.repo_name }}
+    $ mkvirtualenv {{ cookiecutter.project_name }}
     $ cd {{ cookiecutter.repo_name }}/
     $ python setup.py develop
 
@@ -76,7 +76,7 @@ Ready to contribute? Here's how to set up `{{ cookiecutter.repo_name }}` for loc
 
 5. When you're done making changes, check that your changes pass flake8 and the tests, including testing other Python versions with tox::
 
-    $ flake8 {{ cookiecutter.repo_name }} tests
+    $ flake8 {{ cookiecutter.project_name }} tests
     $ python setup.py test
     $ tox
 
@@ -108,4 +108,4 @@ Tips
 
 To run a subset of tests::
 
-    $ python -m unittest tests.test_{{ cookiecutter.repo_name }}
+    $ python -m unittest tests.test_{{ cookiecutter.project_name }}
